@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact Page</title>
+</head>
+<style>
+
+body, html{
+    height: 100%;
+}
+
+*{
+  
+    box-sizing: border-box;
+}
+/* navbar */
+.mid {
+ display: block;
+text-align: left;
+font-size: 17px;
+background-color: orange;
+color: black;
+padding: 10px;
+text-decoration: none;
+height: 60px;
+border-radius: 10px;
+border-color: rgb(249, 134, 2);
+border-style: solid;
+ 
+
+}
+
+.mid a {
+    float: left;
+    text-decoration: none;
+    padding: 7px;
+    font-size: 20px;
+    color: black;
+    margin-left: 20px;
+
+}
+
+.mid a:hover {
+    background-color: brown;
+    color: aliceblue;
+}
+
+#logo{
+    float: left;
+    position: relative;
+    margin: 0px 25px 10px 15px;
+
+
+}  
+#logo:hover{
+    background-color: green;
+    cursor: progress;
+}
+/* 
+.active {
+    background-color: cadetblue;
+} */
+
+.btn-r {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    display: inline-block;
+    border: white;
+    color: white;
+    margin: 0px;
+    padding: 8px;
+    font-size: 18px;
+    background-color: green;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family:serif;
+}
+.btn-r:hover{
+    background-color: maroon;
+
+}
+
+.btn-l {
+    position: absolute;
+    right: 120px;
+    top: 20px;
+    display: inline-block;
+    border: white;
+    color: white;
+    margin: 0px;
+    padding: 8px;
+    font-size: 18px;
+    background-color:green;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family:serif;
+    }
+.btn-l:hover{
+    background-color: maroon;
+}
+
+
+.bg-img{
+    background-image: url("https://images.pexels.com/photos/54455/cook-food-kitchen-eat-54455.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    min-height: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    height: 100px;
+
+}
+
+
+.container{
+    position: absolute;
+    right: 0;
+    margin: 15px;
+    width: 680px;
+    max-width: 450px;
+    left:480px;
+    top:30px;
+    
+    padding: 20px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  font-size: 15px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background:wheat;
+  font-size: 15px;
+
+
+
+}
+
+input[type=text]:focus,input[type=password]:focus{
+    background-color: wheat; 
+     outline: none; 
+}
+
+
+.btn{
+    background-color: orange;
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 20px;
+
+}
+.btn:hover{
+    background-color: green;
+    color: black;
+    opacity:1;
+}
+
+   .footer {
+    /* position: fixed; */
+    left: 0;
+    padding-top: 2px;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: orange;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+</style>
+
+
+
+
+<!-- HTML CODE -->
+
+<body>
+    
+    <header>
+        <!-- midlle container for navbar-->
+        <div class="mid" id="navbar">
+      
+           <div id = "logo" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRXLBpLmX7wlnrHk_1wMQBu_F8KXCQ0Usg8Q&usqp=CAU " alt ="..." height ="42px" width="70px" ></div>
+      
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="cuisine.html">Cuisine</a>
+          <a href="m-f.html">Meat & SeaFood</a>
+          <a href="h-d.html">Healthy & Diet</a>
+       
+          <!-- right-side button logo -->
+
+          <button class="btn-r">Call us📞</button>
+          <button class="btn-l">  EmailⓂ️ </button>
+          </div>
+          
+         </header>
+
+    <div class ="bg-img">
+        <form action ="" class ="container">
+           <h1 style="text-align: center;">Sign Up</h1>
+
+            <label for="text"> <b>Full Name</b></label>
+           <input type ="text" placeholder = "Enter Your Name" name ="text" required>
+
+           <label for="email"> <b>Email</b></label>
+           <input type ="text" placeholder = "Enter Email" name ="email" required>
+<!-- 
+           <label for="email"> <b>Email</b></label>
+           <input type ="text" placeholder = "Enter Email" name ="email" required>
+
+           <label for="psw"> <b>Password</b></label>
+           <input type ="password" placeholder = "Enter password" name ="psw" required> -->
+
+           <button type ="submit" class ="btn"> Create account</button>
+        </form> 
+    </div>
+    
+  
+    
+    <div class="footer">
+        <p>| footer |</p>
+    </div>
+</body>
+</html>
+
+
+

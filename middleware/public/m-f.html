@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meat-Seafood</title>
+</head>
+
+<style>
+  .bg-image {
+
+    background-image: url("https://images.pexels.com/photos/6749425/pexels-photo-6749425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    /* background-image: url("https://image.shutterstock.com/image-vector/abstract-background-banner-watercolor-splashes-260nw-1101334280.jpg"); */
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    border-color: black;
+  }
+
+  /* navabr */
+  .mid {
+    display: block;
+    text-align: left;
+    font-size: 17px;
+    background-color: orange;
+    color: black;
+    padding: 11px;
+    text-decoration: none;
+    height: 30px;
+    border-radius: 10px;
+    border-color: rgb(249, 134, 2);
+    border-style: solid;
+  }
+
+  .mid a {
+    float: left;
+    text-decoration: none;
+    padding: 7px;
+    font-size: 20px;
+    color: black;
+    margin-left: 20px;
+
+  }
+
+  .mid a:hover {
+    background-color: brown;
+    color: aliceblue;
+  }
+
+  /* ---------------------------- */
+  #logo {
+    float: left;
+    position: relative;
+    margin: 0px 25px 10px 15px;
+ }
+
+  #logo:hover {
+    background-color: green;
+    cursor: progress;
+  }
+
+ /* 
+.active {
+background-color: cadetblue;
+} */
+
+  /* email and call btn */
+  .btn-r {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    display: inline-block;
+    border: white;
+    color: white;
+    margin: 0px;
+    padding: 8px;
+    font-size: 18px;
+    background-color: green;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: serif;
+
+  }
+
+  .btn-r:hover {
+    background-color: maroon;
+
+  }
+
+  .btn-l {
+    position: absolute;
+    right: 120px;
+    top: 20px;
+    display: inline-block;
+    border: white;
+    color: white;
+    margin: 0px;
+    padding: 8px;
+    font-size: 18px;
+    background-color: green;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: serif;
+  }
+
+  .btn-l:hover {
+    background-color: maroon;
+  }
+
+  /* --------------------------------- */
+
+  /* button of (collection) div */
+  .button {
+    padding: 7px;
+    margin-inline: 10px;
+    color: white;
+    background-color: maroon;
+    text-align: center;
+    cursor: pointer;
+    width: 30%;                      
+    height: 60px;
+    font-size: 20px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .button:hover {
+    background-color: khaki;
+    color: black;
+    box-shadow: 0 8px 16px 0
+  green;
+  }
+
+  .btn-box {
+    padding: 50px;
+
+  }
+  /* background-color: rgba(107, 207, 0, 0.312); */
+  /* --------------------------------------------- */
+
+/* ------------cards------- */
+#column {
+    float: left;
+    width: 30%;
+    padding: 0 12px;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-align: left;
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+}
+.card:hover{
+    box-shadow: 0 10px 16px 0
+    rgba(0,0,0,0.5) ;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0
+    orange;
+  }
+
+
+
+.btn {
+    padding: 7px;
+    margin-inline: 10px;
+    color: black;
+    background-color: orange;
+    text-align: center;
+    cursor: pointer;
+    width: 25%;
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: khaki;
+}
+
+ img{
+  max-width: fit-content;
+  width: min-content;
+  width: 425px;
+}
+
+/* cards */
+/* #column {
+    float: left;
+    width: 20%;
+    padding: 2 5px;
+}
+
+.row {
+    margin: 0 -5px;
+   
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.card {
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 30px;
+    text-align: left;
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    }
+
+.card:hover{
+  box-shadow: 0 8px 16px 0
+  purple;
+  /* rgba(0, 0, 0, 0.2) ; */
+  /* cursor: pointer;
+} */
+/* .container{
+  padding:5px 16px;
+
+}  */
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+  /* .footer {
+
+left: 0;
+padding-top: 2px;
+bottom: 0px;
+height: 50px;
+width: 100%;
+background-color: orange;
+color: black;
+text-align: center;
+font-size: 20px;
+} */
+
+</style>
+
+<body>
+  <header>
+    <!-- midlle container for navbar-->
+    <div class="mid" id="navbar">
+
+      <!-- <div id="logo"><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRXLBpLmX7wlnrHk_1wMQBu_F8KXCQ0Usg8Q&usqp=CAU "
+          alt="..." height="42px" width="70px"></div> -->
+
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="cuisine.html">Cuisine</a>
+      <a href="m-f.html">Meat & SeaFood</a>
+      <a href="h-d.html">Healthy & Diet</a>
+
+      <!-- right-side button logo -->
+      <button class="btn-r">Call us📞</button>
+      <button class="btn-l"> EmailⓂ️ </button>
+    </div>
+  </header>
+
+
+  <div class="bg-image">
+    <div class="bg-text">
+
+      <!-- <input type="text" name="Search" placeholder="Search....."> -->
+    </div><br>
+
+    <div id="para"></div>
+    <div class="btn-box">
+      <h1 style="font-family:'Times New Roman', Times, serif; text-align: center;">Collection</h1>
+
+     
+
+      <a href="https://www.zomato.com/india">
+        <button type="button" class="button">Restaurent near you</button></a>
+
+      <a href="https://www.zomato.com/bangalore/the-cuisine-story-cv-raman-nagar-bangalore/menu">
+        <button type="button" class="button">Pick all Cuisine... </button></a>
+
+      <a href="https://www.zomato.com/ncr/fresh-fruit-juices-shakes-sector-22/order">
+        <button type="button" class="button">Drinks & Sakes.....</button></a>
+
+      <a href="https://www.zomato.com/desserts-restaurants-near-me">
+        <button type="button" class="button">Desserts...........</button></a>
+
+      <a href="https://www.zomato.com/seafood-restaurants-near-me">
+        <button type="button" class="button">variety of fishes..</button></a>
+
+      <a href="https://www.zomato.com/guwahati/meat-and-eat-1-beltola/order">
+        <button type="button" class="button">Meat and chickens..</button></a>
+
+    </div>
+    <div>
+      <h1 style="text-align: center;">Seafood Restaurants Near Me</h1>
+      <h3 style="text-align: center;">Find the best seafood restaurants near your location. Most seafood are shrimp,
+        salmon, tuna, alaskan pollock and mollusca.
+        Wikipedia citation:
+        "Seafood is any form of sea life regarded as food by humans, prominently including fish and shellfish. Shellfish
+        include various species of molluscs (e.g. bivalve molluscs such as clams, oysters, and mussels and cephalopods
+        such as octopus and squid), crustaceans (e.g. shrimp, crabs, and lobster), and echinoderms (e.g. sea cucumbers
+        and sea urchins). Historically, marine mammals such as cetaceans (whales and dolphins) as well as seals have
+        been eaten as food, though that happens to a lesser extent in modern times. Edible sea plants such as some
+        seaweeds and microalgae are widely eaten as sea vegetables around the world, especially in Asia. In the United
+        States, although not generally in the United Kingdom, the term "seafood" is extended to fresh water organisms
+        eaten by humans, so all edible aquatic life may be referred to as "seafood.</h3>
+    </div>
+  </div>
+
+  <!-- cards -->
+  <div class="row">
+    <div id="column">
+      <div class="card">
+        <h3>♥️</h3>
+        <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/salmon-1238248__340.jpg">
+        <p>$ 999.00</p>
+        <div>
+          <a href="#" class="btn">Add to cart</a>
+          <a href="https://10619-2.s.cdn12.com/m6/menu-Mahalaxmi-South-Indian-Food.jpg" class="btn">View Menu</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="column">
+      <div class="card">
+        <h3>♥️</h3>
+        <img
+          src="https://cdn.pixabay.com/photo/2013/07/19/00/18/seafood-165220__340.jpg">
+        <p>$ 999.00</p>
+        <div>
+          <a href="#" class="btn">Add to cart</a>
+          <a href="https://images.happycow.net/venues/1024/22/83/hcmp228346_1078439.jpeg" class="btn">View Menu</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="column">
+      <div class="card">
+        <h3>♥️</h3>
+        <img
+          src="https://cdn.pixabay.com/photo/2021/01/27/08/24/fish-5954149__340.jpg">
+        <p>$ 999.00</p>
+        <div>
+          <a href="#" class="btn">Add to cart</a>
+          <a href="https://cdn5.vectorstock.com/i/1000x1000/59/39/indian-cuisine-menu-with-national-dishes-vector-21985939.jpg " class="btn">View
+            Menu</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="column">
+      <div class="card">
+        <h3>♥️</h3>
+
+        <img src="https://cdn.pixabay.com/photo/2021/01/27/08/24/fish-5954149__340.jpg">
+        <p>$ 999.00</p>
+        <div>
+          <a href="#" class="btn">Add to cart</a>
+          <a href="https://cdn5.vectorstock.com/i/1000x1000/59/39/indian-cuisine-menu-with-national-dishes-vector-21985939.jpg"
+            class="btn">View Menu</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="column">
+      <div class="card">
+        <h3>♥️</h3>
+        <img src="https://cdn.pixabay.com/photo/2018/02/27/18/25/food-3186208__340.jpg">
+        <p>$ 999.00</p>
+        <div>
+          <a href="#" class="btn">Add to cart</a>
+          <a href="https://b.zmtcdn.com/data/menus/427/18664427/3fc2b82fee72ce307cf297c89c3b3ffe.jpg" class="btn">View
+            Menu</a>
+        </div>
+      </div>
+    </div>
+  <div class="row">
+    <div id="column">
+      <div class="card">
+        <h3>♥️</h3>
+        <img src="https://cdn.pixabay.com/photo/2018/09/27/05/37/food-3706277__340.jpg">
+        <p>$ 999.00</p>
+        <div>
+          <a href="#" class="btn">Add to cart</a>
+          <a href="https://10619-2.s.cdn12.com/m6/menu-Mahalaxmi-South-Indian-Food.jpg" class="btn">View Menu</a>
+        </div>
+      </div>
+    </div>
+
+   <!-- dd to cart</a>
+          <a href="https://b.zmtcdn.com/data/menus/418/18933418/ee945c5428a5307e268f9045cff4a2fe.jpg " class="btn">View
+            Menu</a> -->
+        </div>
+      </div>
+    </div> -->
+
+
+    
+    
+  </body>
+  
+  </html>
+ 
